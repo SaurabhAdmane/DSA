@@ -1,5 +1,6 @@
 package com.saurabh.dsa;
 
+// Que --> Reverse the given int
 // * --> 541 = 5 * 100 + 4 * 10 + 1 * 1 = 500 + 40 + 1 = 541
 public class ReverseInt {
     public static void main(String[] args) {
