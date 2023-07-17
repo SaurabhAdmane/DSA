@@ -7,7 +7,7 @@ package com.saurabh.dsa.knapsack;
 // values[] = {1,2,3}
 // weight[] = {4,5,1}
 // Output: 3
-public class Knapsack_0_1 {
+public class Knapsack_0_1_1 {
 
     public static void main(String[] args) {
         //

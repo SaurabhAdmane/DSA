@@ -1,32 +1,32 @@
 package com.saurabh.dsa.knapsack;
 
-// array of sum should be EVEN so that we can divide the array in two part
-// arr[] = 1 , 5, 11, 5
-// o/p = t/f
-public class EqualSumPartition {
+// https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
+// Input:
+// N = 6
+// arr[] = {3, 34, 4, 12, 5, 2}
+// sum = 9
+// Output: 1 (true)
+// Explanation: Here there exists a subset with
+// sum = 9, 4+3+2 = 9.
+public class SubsetSum_2 {
 
     public static void main(String[] args) {
-        int[] inputArray = {1, 5, 11, 5};
-        System.out.println("EqualSumPartition Output: " + equalSumPartition(inputArray));
+        int[] arr = {2, 3, 7, 8, 10};
+        int sum = 11;
+        int size = 5;
+        System.out.println("Output : " + subsetSum(arr, size, sum));
     }
+/**
+    size          sum----->
+     |         0 1 2 3 4 5 6 7 8 9 10 11
+     |    0   |T|F|F|F|F|F|F|F|F|F|F|F|
+  2  |    1   |T|_|_|_|_|_|_|_|_|_|_|_|
+  3  |    2   |T|_|_|_|_|_|_|_|_|_|_|_|
+  7  V    3   |T|_|_|_|_|_|_|_|_|_|_|_|
+  8       4   |T|_|_|_|_|_|_|_|_|_|_|_|
+  10      5   |T|_|_|_|_|_|_|_|_|_|_|_|
 
-    public static boolean equalSumPartition(int[] inputArray) {
-        int sum = 0;
-
-        for (int j : inputArray) {
-            sum = sum + j;
-        }
-
-        if (sum % 2 != 0) // sum getting ODD means equal partition is not available in the array
-            return false;
-
-        if (sum % 2 == 0) { // sum getting EVEN means equal partition is available in the array
-            return subsetSum(inputArray, inputArray.length, sum / 2);
-        }
-
-        return false;
-    }
-
+ */
     public static boolean subsetSum(int[] arr, int size, int sum) {
         boolean[][] matrix = new boolean[size + 1][sum + 1];
 

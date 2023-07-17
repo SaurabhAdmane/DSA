@@ -7,7 +7,7 @@ package com.saurabh.dsa.knapsack;
 //      Subset1 = {1, 5, 6}, sum of Subset1 = 12
 //      Subset2 = {11}, sum of Subset2 = 11
 // 12 - 11 = 1 O/P
-public class MinimumSubsetSumDifference {
+public class MinimumSubsetSumDifference_5 {
 
     public static void main(String[] args) {
         int[] input = {1, 6, 5, 11};

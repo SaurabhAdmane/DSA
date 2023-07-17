@@ -2,7 +2,7 @@ package com.saurabh.dsa.knapsack;
 
 
 // return count of subset sum
-public class CountOfSubsetSum {
+public class CountOfSubsetSum_4 {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 6, 8, 10};
         int sum = 10;
