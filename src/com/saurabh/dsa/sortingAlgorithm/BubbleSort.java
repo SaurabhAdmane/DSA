@@ -1,6 +1,8 @@
 package com.saurabh.dsa.sortingAlgorithm;
 
-
+/**
+ * Compare each element with next element
+ * */
 public class BubbleSort {
 
     public static void main(String[] args) {
