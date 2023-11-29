@@ -28,7 +28,7 @@ public class PermutationsOfAnArray {
 
     static void permuteHelper(int[] num, int left, int right, List<List<Integer>> output) {
         if (left == right) {
-            output.add(addValue(num, output));
+            output.add(addValue(num));
             return;
         }
 
@@ -39,7 +39,7 @@ public class PermutationsOfAnArray {
         }
     }
 
-    private static List<Integer> addValue(int[] num, List<List<Integer>> output) {
+    private static List<Integer> addValue(int[] num) {
         List<Integer> subOut = new ArrayList<>();
         for (int n:num) {
             subOut.add(n);
